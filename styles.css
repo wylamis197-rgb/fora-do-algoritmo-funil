@@ -145,3 +145,92 @@
   .light-upsell .offer-actions{padding:0 17px 19px}
   .light-upsell .offer-actions .button{font-size:11px;line-height:1.45}
 }
+
+
+/* Paleta quente: marfim, grafite e vermelho queimado — página de upsell */
+.light-upsell{
+  color-scheme:light;
+  --ink:#292522;
+  --muted:#68615b;
+  --soft:#817871;
+  --line:#e9e1da;
+  --gold:#b33a32;
+  --gold2:#b33a32;
+  --green:#b33a32;
+  background:linear-gradient(180deg,#f8f5f1 0%,#f1ece6 100%);
+  color:#292522;
+}
+.light-upsell .topbar{border-color:#e9e1da}
+.light-upsell .brand{color:#292522}
+.light-upsell .brand small{color:#817871}
+.light-upsell .brand-symbol{
+  color:#b33a32;
+  background:#fff5f2;
+  border-color:#e8c9c3;
+}
+.light-upsell .top-note{color:#817871}
+.light-upsell .panel{
+  background:#fffefd;
+  border:1px solid #e9e1da;
+  box-shadow:0 14px 42px rgba(54,39,31,.065);
+}
+.light-upsell .status,
+.light-upsell .status-congrats{
+  background:#fff0ed;
+  border:1px solid #f0d0ca;
+  color:#b22f28;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.09em;
+  padding:10px 15px;
+}
+.light-upsell .eyebrow{color:#9b3932}
+.light-upsell .page h1{color:#292522}
+.light-upsell .page h1 em{color:#b33a32}
+.light-upsell .page-lead{color:#68615b}
+.light-upsell .page-lead strong{color:#302a25}
+.light-upsell .offer{
+  background:#fffdfa;
+  border:1px solid #e9ddd4;
+  box-shadow:0 8px 25px rgba(54,39,31,.045);
+}
+.light-upsell .offer-head{
+  background:#fbf7f3;
+  border-bottom:1px solid #eee5de;
+}
+.light-upsell .offer-tag{color:#a23a32}
+.light-upsell .offer h2{color:#292522}
+.light-upsell .offer .accent{color:#b33a32}
+.light-upsell .offer-head p{color:#6e655f}
+.light-upsell .delta{color:#b3322b}
+.light-upsell .muted-small{color:#827870}
+.light-upsell .offer-benefits{background:#fffdfa}
+.light-upsell .offer-benefits div{color:#b33a32}
+.light-upsell .offer-benefits span{color:#554d47}
+.light-upsell .offer-benefits strong{color:#9e332c}
+.light-upsell .offer-actions{background:#fffdfa}
+.light-upsell .offer-actions .button{
+  background:#b63830;
+  color:#fff;
+  box-shadow:0 8px 18px rgba(182,56,48,.17);
+}
+.light-upsell .offer-actions .button:hover{background:#992c26}
+.light-upsell .refuse{
+  color:#6e655e;
+  background:#f8f5f1;
+  border-color:#e8dfd7;
+  text-decoration-color:#aaa098;
+}
+.light-upsell .refuse:hover{
+  color:#3b332e;
+  background:#f1ebe5;
+  border-color:#d9ccc1;
+}
+.light-upsell .footer{
+  color:#92877f;
+  border-color:#e8dfd7;
+}
+.light-upsell .footer span{color:#92877f}
+@media(max-width:760px){
+  .light-upsell .status-congrats{font-size:10px}
+}
