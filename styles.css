@@ -515,3 +515,119 @@ body.is-redirecting{overflow:hidden}
   .light-downsell .refuse{margin-top:4px;padding:5px 10px}
   .light-downsell .footer{margin-top:3px;padding:4px 0 5px}
 }
+
+
+/* Downsell: layout arejado e hierarquia visual simplificada */
+.light-downsell .topbar{padding:15px 0}
+.light-downsell .brand{gap:11px;font-size:12px}
+.light-downsell .brand-symbol{width:38px;height:38px;border-radius:12px}
+.light-downsell .top-note{font-size:11px}
+.light-downsell .page{padding:19px 0 14px}
+.light-downsell .panel{
+  padding:25px 38px 21px;
+  border-radius:22px;
+}
+.light-downsell .status{
+  padding:8px 12px;
+  font-size:9px;
+  letter-spacing:.11em;
+}
+.light-downsell .eyebrow{display:none}
+.light-downsell .page h1{
+  max-width:680px;
+  margin:13px auto 10px;
+  font-size:clamp(31px,4vw,40px);
+  line-height:1.1;
+  letter-spacing:-.045em;
+}
+.light-downsell .page-lead{
+  max-width:590px;
+  font-size:14px;
+  line-height:1.55;
+}
+.light-downsell .offer{
+  max-width:650px;
+  margin:21px auto 13px;
+  border-radius:18px;
+}
+.light-downsell .offer-head{
+  padding:17px 22px 14px;
+}
+.light-downsell .offer h2{
+  margin:0 0 5px;
+  font-size:23px;
+}
+.light-downsell .delta{
+  margin:5px 0 3px;
+  font-size:38px;
+  line-height:1;
+}
+.light-downsell .muted-small{
+  margin-top:4px;
+  font-size:10px;
+  line-height:1.4;
+}
+.light-downsell .offer-benefits{
+  grid-template-columns:1fr 1fr;
+  gap:11px 18px;
+  padding:15px 23px;
+}
+.light-downsell .offer-benefits div{
+  gap:8px;
+  font-size:12px;
+}
+.light-downsell .offer-benefits span{
+  font-size:12px;
+  line-height:1.4;
+}
+.light-downsell .offer-actions{padding:0 23px 18px}
+.light-downsell .offer-actions .button{
+  min-height:47px;
+  padding:13px 18px;
+  font-size:11px;
+  letter-spacing:.015em;
+}
+.light-downsell .refuse{
+  margin:11px auto 0;
+  padding:8px 13px;
+  font-size:11px;
+  background:transparent;
+  border-color:transparent;
+}
+.light-downsell .footer{
+  margin-top:13px;
+  padding:12px 0 14px;
+  font-size:9px;
+  line-height:1.5;
+}
+.light-downsell .footer span{font-size:8px}
+
+@media(max-width:760px){
+  .light-downsell .topbar{padding:12px 0}
+  .light-downsell .top-note{font-size:9px}
+  .light-downsell .page{padding:14px 0 10px}
+  .light-downsell .panel{padding:20px 16px 17px}
+  .light-downsell .page h1{
+    font-size:clamp(27px,6vw,33px);
+    margin:11px auto 8px;
+  }
+  .light-downsell .page-lead{font-size:12px;line-height:1.5}
+  .light-downsell .offer{margin:16px auto 10px}
+  .light-downsell .offer-head{padding:15px 14px 12px}
+  .light-downsell .offer h2{font-size:21px}
+  .light-downsell .delta{font-size:35px}
+  .light-downsell .offer-benefits{
+    grid-template-columns:1fr 1fr;
+    gap:9px 10px;
+    padding:13px 14px;
+  }
+  .light-downsell .offer-benefits div{font-size:11px;gap:6px}
+  .light-downsell .offer-benefits span{font-size:11px;line-height:1.35}
+  .light-downsell .offer-actions{padding:0 14px 14px}
+  .light-downsell .offer-actions .button{font-size:10px;padding:12px 9px}
+  .light-downsell .refuse{font-size:10px;padding:7px 9px}
+  .light-downsell .footer{margin-top:8px;padding:8px 0 10px}
+}
+@media(max-width:360px){
+  .light-downsell .offer-benefits{grid-template-columns:1fr}
+}
