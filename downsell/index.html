@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a211c"><title>Última condição especial — FORA DO ALGORITMO</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css"></head>
-<body><div class="shell narrow">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f5f1"><title>Última condição especial — FORA DO ALGORITMO</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css"></head>
+<body class="light-upsell light-downsell"><div class="shell narrow">
 <header class="topbar"><div class="brand"><span class="brand-symbol">FA</span><span>FORA<small>DO ALGORITMO</small></span></div><span class="top-note">Última condição especial</span></header>
 <main class="page"><section class="panel center">
 <div class="status">SUA OFERTA AINDA ESTÁ DISPONÍVEL</div>
@@ -13,7 +13,33 @@
 <div class="offer-benefits"><div>✓ <span>14 materiais digitais completos</span></div><div>✓ <span>300 reflexões familiares</span></div><div>✓ <span>Desafio guiado de 30 dias</span></div><div>✓ <span>Todos os jogos e fases</span></div></div>
 <div class="offer-actions"><span class="button button-disabled full">CHECKOUT DO DOWNSELL AINDA NÃO CONFIGURADO</span><p class="muted-small">O link será ativado assim que o checkout de upgrade por + R$ 7,90 for criado na Cakto.</p></div>
 </div>
-<a class="refuse" href="https://foraalgoritmo-2.vercel.app/acesso/essencial">Não, obrigado. Quero continuar com meu Plano Essencial.</a>
+<a class="refuse" href="https://foraalgoritmo-2.vercel.app/acesso/essencial" id="keep-plan-link">Não, obrigado. Manter meu plano atual.</a>
 </section></main>
+<div class="redirect-overlay" id="redirect-overlay" hidden aria-live="polite" aria-modal="true" role="dialog" aria-labelledby="redirect-title">
+  <div class="redirect-card">
+    <div class="redirect-spinner" aria-hidden="true"></div>
+    <h2 id="redirect-title">Abrindo seu acesso...</h2>
+    <p>Você será direcionado diretamente ao aplicativo em instantes.</p>
+    <div class="redirect-progress" aria-hidden="true"><span></span></div>
+  </div>
+</div>
 <footer class="footer">MÉTODO FORA DO ALGORITMO<br><span>RECONHECER · INVESTIGAR · CONVERSAR · ORIENTAR · FORTALECER</span></footer>
-</div></body></html>
+</div>
+<script>
+(function () {
+  const link = document.getElementById("keep-plan-link");
+  const overlay = document.getElementById("redirect-overlay");
+  if (!link || !overlay) return;
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const destination = link.href;
+    overlay.hidden = false;
+    document.body.classList.add("is-redirecting");
+    link.setAttribute("aria-disabled", "true");
+    window.setTimeout(function () {
+      window.location.assign(destination);
+    }, 1800);
+  });
+})();
+</script>
+</body></html>
