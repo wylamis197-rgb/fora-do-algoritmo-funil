@@ -428,3 +428,12 @@ body.is-redirecting{overflow:hidden}
   box-shadow:0 8px 18px rgba(40,122,75,.16);
   opacity:.72;
 }
+
+
+/* Cor exata do botão conforme a referência enviada */
+.light-downsell .offer-actions .button-disabled{
+  background:#287a4b;
+  color:#fff;
+  opacity:1;
+  box-shadow:0 8px 18px rgba(40,122,75,.18);
+}
