@@ -8,9 +8,34 @@
 <div class="eyebrow spaced">Obrigado por escolher o FORA DO ALGORITMO</div>
 <h1>Você está pronto para<br><em>viver fora do algoritmo.</em></h1>
 
-<div class="single-cta"><a class="button button-gold full" href="https://foraalgoritmo-2.vercel.app/acesso/completo">ACESSAR MEU APLICATIVO <b>→</b></a></div>
+<div class="single-cta"><a class="button button-gold full" href="https://foraalgoritmo-2.vercel.app/acesso/completo" id="open-app-link">ACESSAR MEU APLICATIVO <b>→</b></a></div>
 <div class="notice">Use sempre o link de acesso do Plano Completo. Guarde esta página para voltar ao aplicativo quando precisar.</div>
 </section></main>
+<div class="redirect-overlay" id="redirect-overlay" hidden aria-live="polite" aria-modal="true" role="dialog" aria-labelledby="redirect-title">
+  <div class="redirect-card">
+    <div class="redirect-spinner" aria-hidden="true"></div>
+    <h2 id="redirect-title">Entrando no aplicativo...</h2>
+    <p>Estamos preparando seu acesso. Você será direcionado em instantes.</p>
+    <div class="redirect-progress" aria-hidden="true"><span></span></div>
+  </div>
+</div>
 <footer class="footer">MÉTODO FORA DO ALGORITMO<br><span>RECONHECER · INVESTIGAR · CONVERSAR · ORIENTAR · FORTALECER</span></footer>
 </div>
+<script>
+(function () {
+  const link = document.getElementById("open-app-link");
+  const overlay = document.getElementById("redirect-overlay");
+  if (!link || !overlay) return;
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const destination = link.href;
+    overlay.hidden = false;
+    document.body.classList.add("is-redirecting");
+    link.setAttribute("aria-disabled", "true");
+    window.setTimeout(function () {
+      window.location.assign(destination);
+    }, 1800);
+  });
+})();
+</script>
 </body></html>
