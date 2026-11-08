@@ -234,3 +234,43 @@
 @media(max-width:760px){
   .light-upsell .status-congrats{font-size:10px}
 }
+
+
+/* Vermelho reservado à confirmação de compra e à chamada de preço do título */
+.light-upsell .status-congrats{
+  background:#fff0ed;
+  border:1px solid #edc4bd;
+  color:#b3322b;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.1em;
+  padding:11px 17px;
+  box-shadow:0 3px 10px rgba(179,50,43,.07);
+}
+.light-upsell .eyebrow{color:#81766a}
+.light-upsell .page h1{color:#292522}
+.light-upsell .page h1 em{color:#b3322b}
+.light-upsell .offer-tag{color:#8e7958}
+.light-upsell .offer h2{color:#292522}
+.light-upsell .offer .accent{color:#292522}
+.light-upsell .delta{color:#292522}
+.light-upsell .offer-benefits div{color:#a58d68}
+.light-upsell .offer-benefits span{color:#554d47}
+.light-upsell .offer-benefits strong{color:#302a25}
+.light-upsell .offer-actions .button{
+  background:#343c36;
+  color:#fff;
+  box-shadow:0 8px 18px rgba(41,48,43,.13);
+}
+.light-upsell .offer-actions .button:hover{background:#252d28}
+.light-upsell .refuse{
+  color:#6e655e;
+  background:#f8f5f1;
+  border-color:#e8dfd7;
+  text-decoration-color:#aaa098;
+}
+.light-upsell .refuse:hover{
+  color:#3b332e;
+  background:#f1ebe5;
+  border-color:#d9ccc1;
+}
