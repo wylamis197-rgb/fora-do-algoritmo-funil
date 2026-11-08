@@ -1,13 +1,14 @@
-# FORA DO ALGORITMO — Funil independente
+# FORA DO ALGORITMO — Pós-compra
 
-Este repositório contém somente as páginas comerciais e de pós-compra. O aplicativo de membros permanece separado em `foraalgoritmo-2`.
+Este repositório contém **somente as páginas exibidas depois da compra**. A página de vendas fica em outro endereço/projeto e não faz parte deste repositório. O aplicativo de membros também permanece separado em `foraalgoritmo-2`.
 
-## Páginas e rotas
+## Páginas de pós-compra
 
-- `/` — página de vendas com os planos Essencial e Completo.
 - `/obrigado/essencial` — confirmação da compra Essencial e oferta de upgrade por +R$ 10.
 - `/downsell` — última oferta de upgrade por +R$ 7,90.
-- `/completo-confirmado` — confirmação da compra Completa com link para o aplicativo.
+- `/completo-confirmado` — confirmação da compra Completa, com link para o aplicativo.
+
+A raiz `/` não é uma página de vendas e não deve ser usada nos botões dos anúncios ou da Cakto. Use diretamente as rotas acima.
 
 ## Checkouts
 
@@ -27,6 +28,6 @@ Este repositório contém somente as páginas comerciais e de pós-compra. O apl
 
 ## Publicação
 
-Importe este repositório como um projeto independente na Vercel. É um site estático, sem etapa de build. O arquivo `vercel.json` está incluído para permitir as rotas amigáveis.
+Projeto estático independente na Vercel, ligado à branch `main`. O arquivo `vercel.json` mantém as rotas amigáveis.
 
 **Atenção:** antes de ativar o Downsell, crie na Cakto um checkout do upgrade por +R$ 7,90 (total R$ 27,80 somando a compra Essencial) e substitua o botão desativado em `downsell/index.html` pelo link gerado.
