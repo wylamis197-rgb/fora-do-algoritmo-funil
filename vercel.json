@@ -1,0 +1,9 @@
+{
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/obrigado/essencial", "destination": "/obrigado/essencial/index.html" },
+    { "source": "/downsell", "destination": "/downsell/index.html" },
+    { "source": "/completo-confirmado", "destination": "/completo-confirmado/index.html" }
+  ]
+}
