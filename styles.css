@@ -418,3 +418,13 @@ body.is-redirecting{overflow:hidden}
 @media(prefers-reduced-motion:reduce){
   .redirect-spinner,.redirect-progress span{animation-duration:1.8s}
 }
+
+
+/* Botão visual do Plano Completo no downsell acompanha o verde da upsell.
+   Permanece inativo enquanto o checkout próprio não estiver configurado. */
+.light-downsell .offer-actions .button-disabled{
+  background:#287a4b;
+  color:#fff;
+  box-shadow:0 8px 18px rgba(40,122,75,.16);
+  opacity:.72;
+}
