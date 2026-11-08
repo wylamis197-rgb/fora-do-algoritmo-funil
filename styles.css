@@ -274,3 +274,12 @@
   background:#f1ebe5;
   border-color:#d9ccc1;
 }
+
+
+/* Botão de ação em verde; vermelho permanece somente nos destaques do topo e preço */
+.light-upsell .offer-actions .button{
+  background:#287a4b;
+  color:#fff;
+  box-shadow:0 8px 18px rgba(40,122,75,.18);
+}
+.light-upsell .offer-actions .button:hover{background:#20643d}
